@@ -22,5 +22,9 @@ urlpatterns = [
     path('driver_detail/<int:pk>', views.driver_details),
     path('driver_detail/', views.driver_list),
     path('driver_create/', views.driver_create),
+    path('driver_update/', views.driver_update),
+    path('driver_delete/', views.driver_delete),
+    
+    
 
 ]
