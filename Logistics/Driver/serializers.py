@@ -3,6 +3,7 @@ from .models import Driver_Detail
 
 # from Logistics.Driver.views import driver_details
 class Driver_DetailSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
     first_name = serializers.CharField(max_length=100)
     last_name = serializers.CharField(max_length=100)
     email = serializers.EmailField()
@@ -11,8 +12,8 @@ class Driver_DetailSerializer(serializers.Serializer):
     address = serializers.CharField(max_length=300)
     vehicle_registration_number = serializers.CharField(max_length=100)
     driving_licence_number = serializers.CharField(max_length=100)
-    # registration_card_photo = serializers.ImageField()
-    # driving_licence_photo = serializers.ImageField()
+    registration_card_photo = serializers.FileField()
+    driving_licence_photo = serializers.FileField()
     # vehicle_registration_number = serializers.ImageField(upload_to='images/')
     # driving_licence_number = serializers.ImageField(upload_to='images/')
 

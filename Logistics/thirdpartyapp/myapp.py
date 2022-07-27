@@ -6,8 +6,8 @@ import json
 # URL =  "http://localhost:8000/driver_create/"
 
 # data = {
-#     'first_name':'amit',
-#     'last_name':'verma',
+#     'first_name':'veer',
+#     'last_name':'yadav',
 #     'email':'amit@gmail.com',
 #     'password':"amin@123",
 #     'phone_number':8689876769,
@@ -54,7 +54,7 @@ import json
 
 URL =  "http://localhost:8000/driver_delete/"
 
-data = {'id':4,}
+data = {'id':1,}
 
 json_data = json.dumps(data)
 r = requests.delete(url = URL, data = json_data)
