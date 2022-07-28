@@ -13,9 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from lib2to3.pgen2 import driver
 from django.contrib import admin
 from django.urls import path
 from Driver import views
+from Driver.admin import driver_site
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +26,7 @@ urlpatterns = [
     path('driver_create/', views.driver_create),
     path('driver_update/', views.driver_update),
     path('driver_delete/', views.driver_delete),
+    path('driveradmin/', driver_site.urls),
     
     
 
