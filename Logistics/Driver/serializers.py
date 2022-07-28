@@ -8,7 +8,7 @@ class Driver_DetailSerializer(serializers.Serializer):
     last_name = serializers.CharField(max_length=100)
     email = serializers.EmailField()
     password = serializers.CharField(max_length=50)
-    phone_number = serializers.IntegerField()
+    phone_number = serializers.CharField()
     address = serializers.CharField(max_length=300)
     vehicle_registration_number = serializers.CharField(max_length=100)
     driving_licence_number = serializers.CharField(max_length=100)
